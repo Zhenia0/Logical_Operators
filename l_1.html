@@ -1,22 +1,32 @@
-<script>
-    'use strict';
-    let Who = prompt("Кто там?", "default");
-    if (Who === "Админ") {
-        let password = prompt("Пароль?", "default");
-        if (password === "Я главный") {
-            alert("Здравствуйте!");
-        } else if (password === null) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        let Who = prompt("Кто там?", "default");
+        if (Who === "Админ") {
+            let password = prompt("Пароль?", "default");
+            if (password === "Я главный") {
+                alert("Здравствуйте!");
+            } else if (password === null) {
+                alert("Отменено");
+            }
+            else {
+                alert("Неверный пароль");
+            }
+    
+        }
+        else if (Who === null) {
             alert("Отменено");
         }
         else {
-            alert("Неверный пароль");
+            alert("Я вас не знаю");
         }
-
-    }
-    else if (Who === null) {
-        alert("Отменено");
-    }
-    else {
-        alert("Я вас не знаю");
-    }
-</script>
+    </script>  
+</body>
+</html>
