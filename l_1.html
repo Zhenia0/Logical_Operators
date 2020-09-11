@@ -1,0 +1,22 @@
+<script>
+    'use strict';
+    let Who = prompt("Кто там?", "default");
+    if (Who === "Админ") {
+        let password = prompt("Пароль?", "default");
+        if (password === "Я главный") {
+            alert("Здравствуйте!");
+        } else if (password === null) {
+            alert("Отменено");
+        }
+        else {
+            alert("Неверный пароль");
+        }
+
+    }
+    else if (Who === null) {
+        alert("Отменено");
+    }
+    else {
+        alert("Я вас не знаю");
+    }
+</script>
